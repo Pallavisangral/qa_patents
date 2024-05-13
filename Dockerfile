@@ -10,5 +10,3 @@ COPY . /patent
 # Install any needed packages specified in requirement.txt
 RUN pip install --no-cache-dir -r requirement.txt
 
-# Command to run the Flask application
-CMD ["python", "app.py"]

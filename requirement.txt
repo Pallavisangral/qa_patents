@@ -22,6 +22,8 @@ shellingham==1.5.4
 tiktoken==0.5.2
 tokenizers==0.15.1
 torch==2.2.0
+langchain-text-splitters
 transformers==4.37.2
+gunicorn
 
 

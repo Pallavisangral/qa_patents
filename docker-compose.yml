@@ -5,6 +5,11 @@ services:
     build: .
     volumes:
       - .:/patent
+    command : sh -c "gunicorn --config gunicorn_config.py app:app"
     ports:
-      - "5000:5000"  # Map container port 5000 to host port 5000
+
+      - "8000:8000" # Map container port 5000 to host port 5000
     restart: always
+    working_dir: /patent
+
+     

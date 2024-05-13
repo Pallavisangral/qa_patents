@@ -23,6 +23,7 @@ class patent_retrieval:
         self.embeddings = HuggingFaceEmbeddings(model_name="BAAI/bge-large-en",encode_kwargs={'normalize_embeddings': True})
     def load_local_vector_store(self):
         vector_store = FAISS.load_local("vector_db", self.embeddings)
+        
         return vector_store
     
     def get_retriever(self):
